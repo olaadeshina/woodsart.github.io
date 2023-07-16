@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="woodsartc.css">
+  <title>WOODS ART WORK</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active"><span style="color:dodgerblue; font-size: 24px; border-style:outset; border-color: rgb(100, 250,50); font-family: monospace;">WOODS <span style="color: orangered;">ART <span style="color:dodgerblue;">GALLERY</a></span></span></span></a>
+
+
+
+
+      <div id="myLinks">
+        <a href="#news">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About US</a>
+        <a href="#about">Category</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+  
+
+        <!-- JAVASCRIPT 01 -->
+
+
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+
+       
+
+
+
+
+
+      <div class="slideshow-container">
+
+
+
+
+
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="IMG_6818.jpg" style="width:100%">
+          <div class="text">WELCOMES YOU...WOODS ART GALLERY</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="CSNP3824.jpg" style="width:100%">
+          <div class="text">WHERE CREATIVITY LIVES</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="IMG_5710.jpg" style="width:100%">
+          <div class="text">LETS MAKE YOU!</div>
+        </div>
+
+
+
+
+        <div class="slideshow-fx-txt">
+
+
+
+
+
+          <div class="slide-btn">
+
+          <button class="cart-btn"> My Cart <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg></button>
+
+         <a href="template.html"> <button class="log"> FORM</button></a>
+          <button type="button" class="shop-now-btn">EXPLORE</button>
+        </div>
+
+
+        </div>
+
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+
+
+<p class="care-txt">Do you care for a room in our gallery?</p>
+
+<div class="rect-cover">
+
+<div class="rect-img">
+  <img src="DKWA1965.jpg" class="img-rect">
+  <img src="IMG_4986.jpg " class="img-rect">
+  <img src="IMG_5992.jpg " class="img-rect">
+  <img src="IMG_6817.jpg " class="img-rect">
+  <img src="ROYZ8374.jpg " class="img-rect">
+  <img src="IMG_6819.jpg " class="img-rect">
+
+
+  
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="bfore-ft">
+  <h >Experience some of our hot deals! </h>
+ 
+
+<div class="scrol-container">
+  <img src="IMG_5710.jpg" >
+  <img src="IMG_5707.jpg" alt="">
+  <img src="IMG_5708.jpg" alt="">
+  <img src="IMG_5992.jpg" alt="">
+  <img src="IMG_4985.jpg" alt="">
+  <img src="IMG_5993.jpg" alt="">
+  </div>
+</div>
+
+
+
+<footer class="foot">
+  Contact us through our social media handles for more infomation
+
+  <div class="media">
+        <img class="media" src="fbim.png">
+        <img class="media" src="instagram (1).png">
+        <img class="media" src="twitter.png">
+        <img class="media" src="whatsapp.png">
+      </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- JAVASCRIPT 02-->
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) { slideIndex = 1 }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+      </script>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+
